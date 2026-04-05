@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #171717;
+}
+
+#inicio {
+    background-color: #171717;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#inicio img {
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+#inicio p {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.btn {
+    background: #e3b946;
+    color: #000;
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.logo img {
+    height: 120px;
+}
+
+header {
+    background-color: #171717;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-top: 3px solid #e3b946;
+    border-bottom: 3px solid #e3b946;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: #e3b946;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #e3b946;
+    text-align: center;
+    font-weight: bold;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* repeat(repete as colunas. auto-fit(se ajusta sozinho ao tamanho da tela). MinMax(tamanho das colunas, onde min de 200px e ocupa espaço disponivel de 1fr).*/
+    gap: 20px;
+}
+
+.card {
+    background: #111;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+    border: 1px solid #222;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    border-color: #d4a017;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    border-radius: 5px;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.card a button {
+    background-color: #d4a017;
+    border: none;
+    padding: 10px;
+    margin-top: 7px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #111;
+    border-top: 3px solid #d4a017;
+    border-bottom: 3px solid #d4a017;
+    color: #fff;
+}
+
+.whatsapp-fixo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.instagram-fixo {
+    position: fixed;
+    bottom: 20px;
+    right: 140px;
+    background: #c21d9b;
+    color: white;
+    padding: 15px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media(max-width:600px) {
+    .hero img {
+        height: 80px;
+    }
+}

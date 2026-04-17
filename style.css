@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     background-color: #171717;
 }
@@ -64,6 +65,11 @@ nav a {
     margin-left: 20px;
     font-weight: bold;
     cursor: pointer;
+    
+}
+
+nav a:hover {
+    color: aliceblue;
 }
 
 h2 {
@@ -116,6 +122,20 @@ h2 {
     width: 100%;
     border-radius: 5px;
     font-weight: bold;
+    font-family: sans-serif;
+}
+
+.card a button:hover {
+    transform: scale(1.03);
+    color: #ffffff;
+}
+
+.whats:hover {
+    background: #25D366;
+}
+
+.insta:hover {
+    background-color: #c21d9b;
 }
 
 footer {
@@ -126,6 +146,11 @@ footer {
     border-top: 3px solid #d4a017;
     border-bottom: 3px solid #d4a017;
     color: #fff;
+}
+
+.direitos {
+    color: #d4a017;
+    font-size: 15px;
 }
 
 .whatsapp-fixo {
@@ -152,8 +177,83 @@ footer {
     font-weight: bold;
 }
 
-@media(max-width:600px) {
-    .hero img {
+
+@media(max-width:768px){
+
+    /* HERO */
+    #inicio img {
+        height: 150px;
+    }
+
+    #inicio p {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    /* HEADER */
+    header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .logo img {
         height: 80px;
     }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    /* PRODUTOS */
+    .products {
+        grid-template-columns: 1fr; /* 1 por linha */
+        padding: 0 10px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .card img {
+        height: 250px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .card a button {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    /* BOTÕES FIXOS */
+    .whatsapp-fixo {
+        right: 10px;
+        bottom: 15px;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .instagram-fixo {
+        right: 100px;
+        bottom: 15px;
+        padding: 5px;
+        font-size: 14px;
+    }
+
 }
